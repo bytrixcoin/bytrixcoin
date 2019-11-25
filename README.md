@@ -1,8 +1,8 @@
-![image](https://i.imgur.com/4FlvRAt.png)
+![image] (logo.png)
 
 ### Installing
 
-We offer binary images of the latest releases here: https://github.com/derogold/derogold/releases
+We offer binary images of the latest releases here: https://github.com/bytrixcoin/bytrixcoin/releases
 
 If you would like to compile yourself, read on.
 
@@ -35,8 +35,8 @@ If you are using Clang, you will need Clang 6.0 or higher. You will also need li
 - `sudo pip install cmake`
 - `export CC=gcc-8`
 - `export CXX=g++-8`
-- `git clone -b master --single-branch https://github.com/derogold/derogold`
-- `cd derogold`
+- `git clone -b master --single-branch https://github.com/bytrixcoin/bytrixcoin`
+- `cd bytrixcoin`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -45,7 +45,7 @@ If you are using Clang, you will need Clang 6.0 or higher. You will also need li
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./DeroGoldd --version`
+- `./bytrixd --version`
 
 ##### Ubuntu, using Clang
 
@@ -69,8 +69,8 @@ You need to modify the below command for your version of ubuntu - see https://ap
 - `sudo pip install cmake`
 - `export CC=clang-6.0`
 - `export CXX=clang++-6.0`
-- `git clone -b master --single-branch https://github.com/derogold/derogold`
-- `cd derogold`
+- `git clone -b master --single-branch https://github.com/bytrixcoin/bytrixcoin`
+- `cd bytrixcoin`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -79,7 +79,7 @@ You need to modify the below command for your version of ubuntu - see https://ap
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./DeroGoldd --version`
+- `./bytrixd --version`
 
 ##### Generic Linux
 
@@ -88,8 +88,8 @@ Ensure you have the dependencies listed above.
 If you want to use clang, ensure you set the environment variables `CC` and `CXX`.
 See the ubuntu instructions for an example.
 
-- `git clone -b master --single-branch https://github.com/derogold/derogold`
-- `cd derogold`
+- `git clone -b master --single-branch https://github.com/bytrixcoin/bytrixcoin`
+- `cd bytrixcoin`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -98,7 +98,7 @@ See the ubuntu instructions for an example.
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./DeroGoldd --version`
+- `./bytrixd --version`
 
 #### OSX/Apple, using Clang
 
@@ -112,8 +112,8 @@ The binaries will be in the `src` folder when you are complete.
 - `brew install --force cmake boost llvm openssl`
 - `export CC=/usr/local/opt/llvm/bin/clang`
 - `export CXX=/usr/local/opt/llvm/bin/clang++`
-- `git clone -b master --single-branch https://github.com/derogold/derogold`
-- `cd derogold`
+- `git clone -b master --single-branch https://github.com/bytrixcoin/bytrixcoin`
+- `cd bytrixcoin`
 - `mkdir build`
 - `cd build`
 - `cmake ..`
@@ -122,7 +122,7 @@ The binaries will be in the `src` folder when you are complete.
 The binaries will be in the `src` folder when you are complete.
 
 - `cd src`
-- `./DeroGoldd --version`
+- `./bytrixd --version`
 
 #### Windows
 
@@ -143,7 +143,7 @@ You can build for 32-bit or 64-bit Windows. **If you're not sure, pick 64-bit.**
 
 For 64-bit:
 - From the start menu, open 'x64 Native Tools Command Prompt for vs2017'.
-- `cd <your_dero_gold_directory>`
+- `cd <your_coin_directory>`
 - `mkdir build`
 - `cd build`
 - `set PATH="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin";%PATH%`
@@ -151,13 +151,13 @@ For 64-bit:
 
 If you have errors on this step about not being able to find the following static libraries, you may need to update your cmake. Open 'Visual Studio Installer' and click 'Update'.
 
-- `MSBuild DeroGold.sln /p:Configuration=Release /m`
+- `MSBuild BytriX.sln /p:Configuration=Release /m`
 
 The binaries will be in the `src/Release` folder when you are complete.
 
 - `cd src`
 - `cd Release`
-- `DeroGoldd.exe --version`
+- `BytriXd.exe --version`
 
 #### Raspberry Pi 3 B+ (AARCH64/ARM64)
 The following images are known to work. Your operation system image **MUST** be 64 bit.
@@ -172,8 +172,8 @@ Once you have a 64 bit image installed, setup proceeds the same as any Linux dis
 
 ##### Building
 
-- `git clone -b master --single-branch https://github.com/derogold/derogold`
-- `cd derogold`
+- `git clone -b master --single-branch https://github.com/bytrixcoin/bytrixcoin`
+- `cd bytrixcoin`
 - `mkdir build`
 - `cd build`
 - `cmake -G "Visual Studio 16 2019" -A Win32 .. -DBOOST_ROOT=C:/local/boost_1_68_0`
@@ -185,17 +185,18 @@ The binaries will be in the `src/Release` folder when you are complete.
 - `./DeroGoldd --version`
 
 #### Thanks
-Cryptonote Developers, Bytecoin Developers, Monero Developers, Forknote Project, TurtleCoin Community
+Cryptonote Developers, Bytecoin Developers, Monero Developers, Forknote Project, TurtleCoin Community, DeroGold Developters
 
 ### Copypasta for license when editing files
 
-Hi DeroGold contributor, thanks for forking and sending back Pull Requests. Extensive docs about contributing are in the works or elsewhere. For now this is the bit we need to get into all the files we touch. Please add it to the top of the files, see [src/CryptoNoteConfig.h] for an example.
+Hi BytriX contributor, thanks for forking and sending back Pull Requests. Extensive docs about contributing are in the works or elsewhere. For now this is the bit we need to get into all the files we touch. Please add it to the top of the files, see [src/CryptoNoteConfig.h] for an example.
 
 ```
 // Copyright (c) 2012-2017, The CryptoNote developers, The Bytecoin developers
 // Copyright (c) 2014-2018, The Monero Project
 // Copyright (c) 2018-2019, The TurtleCoin Developers
 // Copyright (c) 2018-2019, The DeroGold Developters
+// Copyright (c) 2019-2020, The BytriX Team
 //
 // Please see the included LICENSE file for more information.
 ```
